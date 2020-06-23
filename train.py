@@ -136,7 +136,7 @@ class Train_DISCoNet(object):
         fg = all_predictions[0,-1].view(1,affs.size(1),affs.size(2))
         bg = 1.-fg
                 
-        final = torch.cat([affs,bg,fg],dim=0)
+        final = torch.cat([affs,fg,bg],dim=0)
         
         with h5.File(self.filename+'.h5','a') as o:
             if self.mode == 'disco':
