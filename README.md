@@ -22,10 +22,10 @@ This is a method to perform the cell segmentaiton step in caclium imaging analys
 3. Get inferno as described [here](https://github.com/inferno-pytorch/inferno)
 4. Download the neurofinder training and test data from [here]()
 5. Extract the neurofinder data into HDF5 files:   
-	* create for each neurofinder video a HDF5 file with a dataset named 'video' containing the video with shape time x X x Y    
-	* create a file named BF_labels.h5 containing the foreground-background labels for each video   
-	* create a file summary_images.h5 containing the mean intensity projection for each video   
-	* create a file gt_segmentations.h5 containing the instance labels for each video   
+	* create for each neurofinder video a HDF5 file with a dataset named 'video' containing the video with shape (time x X x Y)    
+	* unzip the file named BF_labels.h5.zip containing the foreground-background labels for each video   
+	* unzip the file summary_images.h5.zip containing the mean intensity projection for each video   
+	* unzip the file gt_segmentations.h5.zip containing the instance labels for each video   
 
 ## Usage
 
